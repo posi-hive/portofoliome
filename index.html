@@ -468,32 +468,34 @@
                 <div class="col-md-12">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <form id="contactForm" name="submit-to-google-sheet" novalidate="novalidate">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
+										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name." name="nama">
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
-										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
+										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address." name="email">
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="form-group">
-										<input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number.">
+										<input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number." name="telepon">
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+										<textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message." name="pesan"></textarea>
 										<p class="help-block text-danger"></p>
 									</div>
 								</div>
 								<div class="clearfix"></div>
 								<div class="col-lg-12 text-center">
 									<div id="success"></div>
-									<button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
+									<button id="sendMessageButton" class="sim-btn btn-hover-new btn-kirim" data-text="KIRIM" type="submit">KIRIM</button>
+
+                                    <button id="sendMessageButton" class="sim-btn btn-hover-new btn-loading d-none" data-text="Loading" type="button" disabled><span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>Loading</button>
 								</div>
 							</div>
 						</form>
