@@ -49,6 +49,7 @@ $(function() {
           //$('#success > .alert-danger').append($("<strong>").text("Maaf " + firstName + ", Apakah nama sudah benar?"));
           //$('#success > .alert-danger').append('</div>');
           //clear all fields
+          console.log('Error!',error.message)
           $('#contactForm').trigger("reset");
         },
         complete: function() {
